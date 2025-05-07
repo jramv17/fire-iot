@@ -8,7 +8,7 @@ import uuid
 
 model = YOLO("best.pt")  
 
-def detect_fire(image_path):
+def detect_fire_static(image_path):
     results = model(image_path)[0]
 
     fire_detected = False
